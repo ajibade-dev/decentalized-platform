@@ -26,7 +26,7 @@ const Card = () => {
             </div>
 
                {/*Card 2  */}
-               <div className='h-[350px] w-3/4 md:w-1/3 rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center'>
+               <div className='h-[350px] w-3/4 md:w-1/3 rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
                 {/* spaceship */}
             <div className='w-60 h-25 flex items-center justify-center'>
                   <img src={spacebunny} alt="spaceship" />
@@ -44,7 +44,7 @@ const Card = () => {
             </div>
 
                {/*Card 3  */}
-               <div className='h-[350px] w-3/4 md:w-1/3 rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center'>
+               <div className='h-[350px] w-3/4 md:w-1/3 rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
                 {/* spaceship */}
             <div className='w-60 h-25 flex items-center justify-center'>
                   <img src={spacedog} alt="spaceship" />
