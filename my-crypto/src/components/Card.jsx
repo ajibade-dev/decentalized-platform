@@ -6,7 +6,7 @@ import spacedog from '../assets/spacedog.png'
 
 const Card = () => {
   return (
-    <div className='w-full h-full flex flex-col md:flex-row gap-24 md:gap-8 bg-[#1A2156] px-6 py-12 items-center'>
+    <div className='w-full h-[1700px] flex flex-col md:flex-row gap-24 md:gap-8 bg-[#1A2156] px-6 py-12 items-center'>
             {/*Card 1  */}
             <div className='h-[350px] w-3/4 md:w-1/3 rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center'>
                 {/* spaceship */}
