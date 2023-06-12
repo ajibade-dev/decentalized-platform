@@ -6,9 +6,9 @@ import spacedog from '../assets/spacedog.png'
 
 const Card = () => {
   return (
-    <div className='w-full h-[1700px] flex flex-col md:flex-row gap-24 md:gap-8 bg-[#1A2156] px-6 py-12 items-center'>
+    <div className='w-full h-full flex flex-col md:flex-row gap-10 md:gap-8 bg-[#1A2156] px-6 py-12 items-center'>
             {/*Card 1  */}
-            <div className='h-[350px] w-3/4 md:w-1/3 rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center'>
+            <div className='h-full w-3/4 md:w-1/3 rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
                 {/* spaceship */}
             <div className='w-60 h-25 flex items-center justify-center'>
                   <img src={spaceship} alt="spaceship" />
@@ -20,13 +20,13 @@ const Card = () => {
                   </div>
                   <div className='flex items-center justify-center mt-3 px-8'>
                     <p className='text-normal text-slate-400 font-display leading-8'>
-                        $$SPACESHIBA will focus on getting listed on various centralized and decentralized exchanges. This will increase accesibility and liquidity for
+                         $SPACESHIBA will focus on getting listed on various centralized and decentralized exchanges. This will increase accesibility and liquidity for
                     </p>
                   </div>
             </div>
 
                {/*Card 2  */}
-               <div className='h-[350px] w-3/4 md:w-1/3 rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
+               <div className='h-full w-3/4 md:w-1/3 rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
                 {/* spaceship */}
             <div className='w-60 h-25 flex items-center justify-center'>
                   <img src={spacebunny} alt="spaceship" />
@@ -44,7 +44,7 @@ const Card = () => {
             </div>
 
                {/*Card 3  */}
-               <div className='h-[350px] w-3/4 md:w-1/3 rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
+               <div className='h-full w-3/4 md:w-1/3 rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
                 {/* spaceship */}
             <div className='w-60 h-25 flex items-center justify-center'>
                   <img src={spacedog} alt="spaceship" />
