@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     fontFamily:{
-      display: ["Open Sans", "sans-serif"],
+      display: ["Hanken Grotesk", "sans-serif"],
     },
     extend: {},
   },
