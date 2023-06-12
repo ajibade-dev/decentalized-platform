@@ -27,7 +27,7 @@ const Hero = () => {
 
                 {/* <button type="button" className="border-gradient text-white border font-medium rounded-lg text-sm px-4 py-4 text-center mr-3 hover:bg-white hover:text-blue-950 hover:border-black duration-200 font-display">
                   Swap 
-                </button> */}
+    </button> */}
                 </div>
             </div>
         </div>
