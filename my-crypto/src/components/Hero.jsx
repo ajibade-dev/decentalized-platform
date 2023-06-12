@@ -1,13 +1,14 @@
 import React from 'react'
 import Navbar from './Navbar'
 import third from '../assets/third.png'
+import shiba from '../assets/shiba.png'
 
 
 
 const Hero = () => {
   return (
     <div>
-          <div className="h-[600px]" style={{
+          <div className="h-[800px] pb-10 md:pb-96" style={{
         backgroundImage: `url(${third})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -29,9 +30,14 @@ const Hero = () => {
                 <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                 <span class="relative px-14 py-4 transition-all ease-in duration-7 bg-slate-900 rounded-md group-hover:bg-opacity-0 font-display">
                     Swap
-                </span>
-</button>
+                </span></button>
+                </div>
 
+                {/* Image of the dog */}
+                <div className='mx-auto flex justify-center items-center'>
+                  <div className='w-40 h-50 mt-[-20px]'>
+                  <img src={shiba} alt="shiba" />
+                  </div>
                 
                 </div>
             </div>
