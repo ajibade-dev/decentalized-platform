@@ -1,15 +1,16 @@
 import React from 'react'
 import Navbar from './Navbar'
-import third from '../assets/third.png'
+import third2 from '../assets/third2.png'
 import shiba from '../assets/shiba.png'
 
 
 
 const Hero = () => {
   return (
-    <div>
+  
+  
           <div className="h-[800px] pb-10 md:pb-96" style={{
-        backgroundImage: `url(${third})`,
+        backgroundImage: `url(${third2})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}>
@@ -42,7 +43,6 @@ const Hero = () => {
                 </div>
             </div>
         </div>
-    </div>
   )
 }
 
