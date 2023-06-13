@@ -11,7 +11,7 @@ const About = () => {
                   </div>
 
           <div className='h-full w-full flex flex-col md:flex-row px-6 py-12 bg-[#1A2156] gap-10 md:gap-0'>
-            <div className='flex flex-col w-full mx-auto md:mx-10 gap-3 justify-center'>
+            <div className='flex flex-col w-full mx-auto md:mx-20 gap-3 justify-center'>
                 {/* div holdiing shiba and text on the side */}
                 <div className='flex flex-row gap-3 mx-auto md:mx-0 justify-center'>
                     {/* shiba div */}
@@ -20,7 +20,7 @@ const About = () => {
                   </div>
                   {/* text div */}
                   <div className='flex flex-col w-full justify-center'>
-                    <h1 className='font-extrabold font-display text-4xl text-[#393E65]'>Revolutionary</h1>
+                    <h1 className='font-extrabold font-display md:text-4xl text-3xl text-[#393E65]'>Revolutionary</h1>
 
                     <div className='flex flex-row'>
                         <h2 className='font-display font-bold text-sm md:text-xl text-white'>Space shiba <span className='text-[#218CEC]'>Ecosystem</span></h2>
@@ -32,8 +32,8 @@ const About = () => {
                 </div>
 
                 {/* div to hold the small text at the bottom */}
-                <div className='w-full md:w-[600px] '>
-                    <p className='text-slate-400 font-medium'>
+                <div className='w-[400px] md:w-[500px] '>
+                    <p className='text-slate-400 font-medium text-sm md:text-base'>
                         $SPACESHIBA is a meme coin that strives to merge humor, community and blockchain technology to create a novel experience for cryptocurrency enthusiasts. By building on the Ethereum blockchain, $SPACESHIBA benefits from
                     </p>
                 </div>
@@ -41,7 +41,7 @@ const About = () => {
             </div>
 
             {/* div holding the side image */}
-            <div className='w-[80%] h-[80%] flex items-center justify-center mx-auto'>
+            <div className='w-[80%] h-[80%] flex items-center justify-center mx-auto md:mr-20'>
                   <img src={side} alt="shiba" />
                   </div>
             </div>        

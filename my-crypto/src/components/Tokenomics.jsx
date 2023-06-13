@@ -8,9 +8,9 @@ const Tokenomics = () => {
             TOKENOMICS
             </h2>
 
-            <div className=' w-full md:w-2/3 h-full flex items-center justify-center'>
-           <img src={token} alt="spaceship" />
-                            </div>
+            <div className=' w-[400px] md:w-2/3 h-full flex items-center justify-center'>
+           <img src={token} alt="spaceship"/>
+               </div>
 
     </div>
   )
