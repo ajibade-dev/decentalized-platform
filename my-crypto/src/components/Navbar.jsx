@@ -1,9 +1,25 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 
 const Navbar = () => {
 
   const [nav, setNav] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const navbarClass = scrolled ? 'bg-[#1A2156]' : 'bg-transparent';
+
 
   const handleNav = () => {
     setNav(!nav)
@@ -11,9 +27,9 @@ const Navbar = () => {
 
   return (
 
-<nav className="bg-transparent">
+<nav className={`"bg-transparent fixed w-full z-20 top-0 left-0 duration-300" ${navbarClass}`}>
   
-  <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4 g">
+  <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
   <a href="" className="flex items-center">
     <span className="self-center whitespace-nowrap dark:text-white font-display font-extrabold md:text-3xl text-xl">SPACE SHIBA</span>
   </a>

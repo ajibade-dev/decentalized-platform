@@ -9,13 +9,13 @@ const Hero = () => {
   return (
   
   
-          <div className="h-[800px] pb-10 md:pb-96" style={{
+          <div className="h-[800px] pb-10 md:pb-96 -mt-10 pt-20" style={{
         backgroundImage: `url(${third2})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}>
             <Navbar />
-            <div className='flex flex-col mx-auto justify-center items-center mt-10 w-full gap-7 md:p-0 px-2'>
+            <div className='flex flex-col mx-auto justify-center items-center mt-24 w-full gap-7 md:p-0 px-2'>
                 <div className='w-[100%] md:mx-0 md:w-1/2'>
                 <div className='text-white text-4xl font-display font-bold text-center'> Unlock the Future of Finance with our Revolutionary Crypto Platform</div>
                 </div>
