@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
 
@@ -32,7 +33,10 @@ const Navbar = () => {
   
   <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
   <a href="" className="flex items-center">
-    <span className="self-center whitespace-nowrap dark:text-white font-display font-extrabold md:text-3xl text-xl">SPACE SHIBA</span>
+
+    <div className=' w-[100px] h-[60px] flex items-center justify-center'>
+                <img src={logo} alt="shiba" />
+                </div>
   </a>
   
   <div className="items-center justify-between mx-auto hidden w-full md:flex md:w-auto" id="navbar-cta">
