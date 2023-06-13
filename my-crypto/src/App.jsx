@@ -7,6 +7,7 @@ import Metrics from './components/Metrics'
 import Tokenomics from './components/Tokenomics'
 import Roadmap from './components/Roadmap'
 import Buy from './components/Buy'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Tokenomics />
       <Roadmap />
       <Buy />
+      <Footer />
     </div>
   )
 }
