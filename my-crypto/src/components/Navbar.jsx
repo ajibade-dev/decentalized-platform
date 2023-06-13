@@ -6,6 +6,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(true);
   const [scrolled, setScrolled] = useState(false);
 
+  // to give a sticky menu
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 0;
@@ -20,7 +21,7 @@ const Navbar = () => {
 
   const navbarClass = scrolled ? 'bg-[#1A2156]' : 'bg-transparent';
 
-
+//to open and close the menu in mobile
   const handleNav = () => {
     setNav(!nav)
   }
