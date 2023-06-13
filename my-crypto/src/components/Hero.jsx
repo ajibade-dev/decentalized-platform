@@ -29,8 +29,8 @@ const Hero = () => {
                 <button type="button" className="text-white bg-gradient-to-r from-orange-200 to-purple-400 rounded-lg px-8 py-4 text-center mr-3 hover:bg-white hover:text-blue-950 hover:border-black duration-200 font-display">How to Buy</button>
                 
                 <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                <span class="relative px-14 py-4 transition-all ease-in duration-7 bg-slate-900 rounded-md group-hover:bg-opacity-0 font-display">
-                    Swap
+                <span class="relative px-10 py-4 transition-all ease-in duration-7 bg-slate-900 rounded-md group-hover:bg-opacity-0 font-display">
+                    Whitepaper
                 </span></button>
                 </div>
 

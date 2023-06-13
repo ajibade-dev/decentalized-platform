@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './components/Hero'
 import About from './components/About'
 import Card from './components/Card'
+import ListMetrics from './components/ListMetrics'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <About />
       <Card />
+      <ListMetrics />
     </div>
   )
 }

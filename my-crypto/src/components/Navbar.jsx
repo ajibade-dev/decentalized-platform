@@ -41,7 +41,10 @@ const Navbar = () => {
 
   </div> 
   {/* <div className="flex"> */}
-      <button type="button" className="text-white bg-transparent border border-white font-medium rounded-full text-sm px-4 py-2 text-center mr-3 md:mr-0 hover:bg-white hover:text-blue-950 hover:border-black duration-200">Spaceship Swap</button>
+  <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                <span class="relative px-6 py-4 transition-all ease-in duration-7 bg-slate-900 rounded-md group-hover:bg-opacity-0 font-display">
+                    Whitepaper
+                </span></button>
 
       <div onClick={handleNav} className='flex md:hidden'>
         {!nav ? <AiOutlineClose size={20} color='white' className='m-2' />: <AiOutlineMenu size={20} color='white' className='m-2' />}
