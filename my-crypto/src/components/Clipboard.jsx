@@ -6,10 +6,10 @@ const Clipboard = () => {
     const [value, setValue] = useState('');
     const [copied, setCopied] = useState(false)
   return (
-    <div className='flex flex-row gap-5 bg-[#36358F] md:w-2/3 w-[400px] h-[113px] py-4 rounded-lg'>
+    <div className='flex flex-row gap-5 bg-[#36358F] md:w-2/3 w-[400px] h-[113px] py-4 rounded-2xl'>
         <center className='flex flex-row items-center justify-between px-10 md:gap-[400px] gap-10'>
             <div className='flex flex-col'>
-                <h4 className='text-white font-display'>Token Contact Address</h4>
+                <h4 className='text-white font-display mr-4'>Token Contact Address</h4>
             <input type="text" 
             value="0xf412af62269a0b3................."
             onChange={({ target: {value}}) => setValue(value)}
