@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
 
-<nav className={`"bg-transparent fixed w-full z-20 top-0 left-0 duration-300" ${navbarClass}`}>
+<nav className={`"bg-transparent fixed w-full z-10 top-0 left-0 duration-300" ${navbarClass}`}>
   
   <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
   <a href="" className="flex items-center">

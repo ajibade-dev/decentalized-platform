@@ -8,8 +8,8 @@ import curve from '../assets/curve.png'
 const Hero = () => {
   return (
   
-  <div className='bg-[#1A2156] w-full h-full relative -z-10'>
-          <div className="h-[650px] md:h-[1200px] pb-10 md:pb- -mt-10 pt-20" style={{
+  <div className='bg-[#1A2156] w-full h-full relative'>
+          <div className="h-[650px] md:h-[1200px] pb-10 md:pb-20 pt-20" style={{
         backgroundImage: `url(${third2})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -44,7 +44,7 @@ const Hero = () => {
             </div>
         </div>
 
-        <div className='w-full h-full -mt-16'>
+        <div className='w-full h-full -mt-16 md:mt-[10px]'>
                   <img src={curve} alt="curve" className='md:-mt-[200px] w-[150%]'/>
                   </div>
         </div>

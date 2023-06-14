@@ -1,14 +1,17 @@
 import React from 'react'
-import third3 from '../assets/third3.png'
+import third3 from '../assets/third3.jpeg'
 import rotate from '../assets/rotate.png'
+import Timer from './Timer'
 const Metrics = () => {
   return (
     // the background image
-    <div className='w-full md:h-[800px] h-[600px] flex items-center justify-center px-10 md:py-20' style={{
+    <div className='w-full md:h-[800px] h-[600px] flex items-center justify-center px-10 md:py-20 flex-col gap-10' style={{
         backgroundImage: `url(${third3})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}>
+
+        <Timer duration={15 * 24 * 60 * 60 * 1000} />
         {/* the div holding the inner containers */}
         <div className='flex flex-col md:flex-row px-12 py-12 w-full md:w-2/3 bg-gradient-to-b from-blue-900 to-blue-950 gap-12 md:gap-32 items-center md:items-start rounded-xl'>
             {/* div for the side image */}
