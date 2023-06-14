@@ -17,10 +17,10 @@ const About = () => {
                   </div>
                   {/* text div */}
                   <div className='flex flex-col w-full justify-center'>
-                    <h1 className='font-extrabold font-display md:text-4xl text-3xl text-[#393E65]'>Revolutionary</h1>
+                    <h1 className='font-extrabold font-display md:text-[50px] text-3xl text-[#393E65]'>Revolutionary</h1>
 
-                    <div className='flex flex-row'>
-                        <h2 className='font-display font-bold text-sm md:text-xl text-white'>Space shiba <span className='text-[#218CEC]'>Ecosystem</span></h2>
+                    <div className='flex flex-row mt-5'>
+                        <h2 className='font-display font-bold text-sm md:text-[40px] text-white'>Space shiba <span className='text-[#218CEC]'>Ecosystem</span></h2>
                        
 
                     </div>
@@ -29,8 +29,8 @@ const About = () => {
                 </div>
 
                 {/* div to hold the small text at the bottom */}
-                <div className='w-[400px] md:w-[500px] '>
-                    <p className='text-slate-400 font-medium text-sm md:text-base'>
+                <div className='w-[400px] md:w-[600px] '>
+                    <p className='text-slate-400 font-medium text-sm md:text-[25px] leading-9'>
                         $SPACESHIBA is a meme coin that strives to merge humor, community and blockchain technology to create a novel experience for cryptocurrency enthusiasts. By building on the Ethereum blockchain, $SPACESHIBA benefits from
                     </p>
                 </div>

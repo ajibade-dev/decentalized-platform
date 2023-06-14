@@ -12,10 +12,14 @@ const ListMetrics = () => {
                   <img src={third2} alt="spaceship" />
                   </div> */}
                   {/* Div holding the top title and the images  */}
-                  <div className='flex flex-col gap-12 w-full h-full items-center justify-center'>
-                        <h3 className='flex justify-center mx-auto items-center text-slate-500 font-display text-4xl'>
-                            Listed On
-                        </h3>
+                  <div className='flex flex-col gap-12 w-full h-full items-center justify-center -mt-20 md:-mt-0'>
+                  <h2 className='relative md:text-[87px] text-[30px] font-bold text-gray-700 mt-32 md:mt-0'>
+                    LISTED ON
+                    <h2 className='absolute md:text-[60px] text-base font-display font-semibold text-white md:top-16 md:left-24 top-4 left-10'>
+                        LISTED ON
+                        </h2>
+
+                    </h2>
                         {/* div holding the images and text */}
                         <div className='flex flex-col items-center md:flex-row gap-20 md:gap-16 md:mx-0 justify-center'>
                             {/* div holding the card */}

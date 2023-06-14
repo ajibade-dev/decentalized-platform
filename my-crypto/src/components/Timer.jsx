@@ -21,69 +21,67 @@ const Timer = ({ duration }) => {
         let hours = parseInt(total_hours % 24)
 
         return (
-            <div className='md:w-[400px] w-[340px] h-[170px] bg-gradient-to-b from-blue-900 to-blue-950 rounded-2xl flex flex-col gap-3 mt-24 justify-center items-center'>
+            <div className='md:w-[759px] w-[340px] h-[160px] md:h-[261px] bg-gradient-to-b from-blue-900 to-blue-950 md:rounded-3xl rounded-xl flex flex-col gap-3 md:pt-[40px] pt-[20px] mt-[300px] md:mt-0 items-center justify-center'>
                 <div className='flex flex-row gap-3 mx-24'>
                      {/* div holding number and word */}
                 <div className='flex flex-col gap-2 items-center'>
                     {/* for the number  1*/}
-                    <div className='px-2 py-2 rounded-md bg-[#4A49B7]'>
-                        <h1 className='font-display text-2xl text-white'>
+                    <div className='px-2 py-2 rounded-md bg-[#4A49B7] md:w-[85px] md:h-[85px] items-center justify-center flex'>
+                        <h1 className='font-display md:text-[38.71px] text-white'>
                         {days}
                         </h1>
                     </div>
-                    <h4 className='font-display text-base text-white'>Days</h4>
+                    <h4 className='font-display text-base md:text-[19px] text-white'>Days</h4>
                 </div>
  
                 {/* for the colon 1 */}
-                <h1 className='text-white font-display text-xl flex justify-center'>:</h1>
+                <h1 className='text-white font-display text-[27px] flex justify-center'>:</h1>
 
                      {/* div holding number and word */}
                 <div className='flex flex-col gap-2 items-center'>
                     {/* for the number  2*/}
-                    <div className='px-2 py-2 rounded-md bg-[#4A49B7]'>
-                        <h1 className='font-display text-2xl text-white'>
+                    <div className='px-2 py-2 rounded-md bg-[#4A49B7] md:w-[85px] md:h-[85px] items-center justify-center flex'>
+                        <h1 className='font-display md:text-[38.71px] text-white'>
                         {hours}
                         </h1>
                     </div>
-                    <h4 className='font-display text-base text-white'>Hours</h4>
+                    <h4 className='font-display text-base text-white md:text-[19px]'>Hours</h4>
                 </div>
 
                 {/* for the colon 2 */}
-                <h1 className='text-white font-display text-xl flex justify-center'>:</h1>
+                <h1 className='text-white font-display text-[27px] flex justify-center'>:</h1>
                
                      {/* div holding number and word */}
                      <div className='flex flex-col gap-2 items-center'>
                     {/* for the number  3*/}
-                    <div className='px-2 py-2 rounded-md bg-[#4A49B7]'>
-                        <h1 className='font-display text-2xl text-white'>
+                    <div className='px-2 py-2 rounded-md bg-[#4A49B7] md:w-[85px] md:h-[85px] items-center justify-center flex'>
+                        <h1 className='font-display md:text-[38.71px] text-white'>
                         {minutes}
                         </h1>
                     </div>
-                    <h4 className='font-display text-base text-white'>Minutes</h4>
+                    <h4 className='font-display text-base text-white md:text-[19px]'>Minutes</h4>
                 </div>
 
                 {/* for the colon 3 */}
-                <h1 className='text-white font-display text-xl flex justify-center'>:</h1>
+                <h1 className='text-white font-display text-[27px] flex justify-center'>:</h1>
 
 
 
                      {/* div holding number and word */}
                      <div className='flex flex-col gap-2 items-center'>
                     {/* for the number  4*/}
-                    <div className='px-2 py-2 rounded-md bg-[#4A49B7]'>
-                        <h1 className='font-display text-2xl text-white'>
+                    <div className='px-2 py-2 rounded-md bg-[#4A49B7] md:w-[85px] md:h-[85px] items-center justify-center flex'>
+                        <h1 className='font-display md:text-[38.71px] text-white'>
                         {seconds}
                         </h1>
                     </div>
-                    <h4 className='font-display text-base text-white'>Seconds</h4>
+                    <h4 className='font-display text-base text-white md:text-[19px]'>Seconds</h4>
                 </div>
                 
                 </div>
                 
                
-                <div className='flex justify-center items-center pt-6'>
-                    <h3 className='font-display flex items-center justify-center text-white md:text-lg'>To Presale</h3>
-                </div>
+            
             </div>
             
         )

@@ -15,16 +15,16 @@ const Buy = () => {
     <div className='flex flex-col gap-10 w-full md:w-2/3 px-2 md:px-12 mx-10'>
 
         {/* div holding the shiba and text */}
-        <div className='flex flex-row gap-3 w-full'>
+        <div className='flex flex-row gap-3 w-full md:w-[500px]'>
             {/* for the shiba image */}
-        <div className=' w-[80px] h-[50px] flex items-center justify-center'>
+        <div className='md:h-[137px] md:w-[129px] w-[80px] h-[50px] flex items-center justify-center'>
            <img src={shiba} alt="shiba" />
          </div>
             {/* for the text by the side */}
-            <div className='flex flex-col'>
-                <h3 className='font-display text-2xl font-semibold text-gray-600'>Buy</h3>
+            <div className='flex flex-col md:gap-6 justify-center'>
+                <h3 className='font-display text-2xl md:text-[50px] font-semibold text-gray-600'>Buy</h3>
 
-                <h2 className='font-display text-4xl font-semibold text-white'>How To Buy</h2>
+                <h2 className='font-display text-xl md:text-[50px] font-semibold text-white'>How To Buy</h2>
             </div>
 
         </div>
@@ -33,7 +33,7 @@ const Buy = () => {
         <div className='w-full h-full bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
 
             {/* for the upper part of the div */}
-            <div className='flex flex-row items-center gap-3'>
+            <div className='flex flex-row items-center gap-3 md:w-[381px]'>
                 <h1 className='font-display text-2xl font-semibold text-white'>01</h1>
                 <div className=' w-[60px] h-[50px] flex items-center justify-center'>
            <img src={metamask} alt="shiba" />
@@ -53,7 +53,7 @@ const Buy = () => {
             <div className='w-full h-full bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
 
         {/* for the upper part of the div */}
-        <div className='flex flex-row items-center gap-3'>
+        <div className='flex flex-row items-center gap-3 md:w-[381px]'>
             <h1 className='font-display text-2xl font-semibold text-white'>02</h1>
             <div className=' w-[30px] h-[25px] flex items-center justify-center'>
         <img src={eth} alt="shiba" />
@@ -73,8 +73,8 @@ const Buy = () => {
         <div className='w-full h-full bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
 
                 {/* for the upper part of the div */}
-                <div className='flex flex-row items-center gap-3'>
-                    <h1 className='font-display text-2xl font-semibold text-white'>03</h1>
+                <div className='flex flex-row items-center gap-3 md:w-[381px]'>
+                    <h1 className='font-display text-2xl font-semibold text-white md:text-[40px]'>03</h1>
                     <div className=' w-[60px] h-[50px] flex items-center justify-center'>
                 <img src={together} alt="shiba" />
                 </div>
