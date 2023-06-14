@@ -1,11 +1,11 @@
 import React from 'react'
-import third2 from '../assets/third2.png'
+import third3 from '../assets/third3.png'
 import rotate from '../assets/rotate.png'
 const Metrics = () => {
   return (
     // the background image
-    <div className='w-full md:h-[800px] h-[600px] flex items-center justify-center px-10 mx-auto md:py-20' style={{
-        backgroundImage: `url(${third2})`,
+    <div className='w-full md:h-[800px] h-[600px] flex items-center justify-center px-10 md:py-20' style={{
+        backgroundImage: `url(${third3})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}>

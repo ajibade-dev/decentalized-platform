@@ -2,14 +2,14 @@ import React from 'react'
 import Navbar from './Navbar'
 import third2 from '../assets/third2.png'
 import shiba from '../assets/shiba.png'
-
+import curve from '../assets/curve.png'
 
 
 const Hero = () => {
   return (
   
-  
-          <div className="h-[800px] pb-10 md:pb-96 -mt-10 pt-20" style={{
+  <div className='bg-[#1A2156] w-full h-full relative -z-10'>
+          <div className="h-[650px] md:h-[1200px] pb-10 md:pb- -mt-10 pt-20" style={{
         backgroundImage: `url(${third2})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -35,13 +35,18 @@ const Hero = () => {
                 </div>
 
                 {/* Image of the dog */}
-                <div className='mx-auto flex justify-center items-center'>
-                  <div className='w-40 h-50 mt-[-20px]'>
+                <div className='mx-auto flex justify-center items-center md:mt-10 mt-0'>
+                  <div className='md:w-[25%] h-60 w-40 mt-[-30px] md:mt-0'>
                   <img src={shiba} alt="shiba" />
                   </div>
                 
                 </div>
             </div>
+        </div>
+
+        <div className='w-full h-full -mt-16'>
+                  <img src={curve} alt="curve" className='md:-mt-[200px] w-[150%]'/>
+                  </div>
         </div>
   )
 }

@@ -8,7 +8,7 @@ const Roadmap = () => {
     ROADMAP
     </h2>
 
-    <div className=' w-[450px] md:w-2/3 h-full flex items-center justify-center'>
+    <div className=' w-[400px] md:w-2/3 h-full flex items-center justify-center'>
    <img src={road} alt="spaceship" />
                     </div>
 

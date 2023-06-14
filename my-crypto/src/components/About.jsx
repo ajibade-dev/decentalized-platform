@@ -5,10 +5,7 @@ import side from '../assets/side image.png'
 
 const About = () => {
   return (
-    <div className='flex flex-col w-full h-full'>
-      <div className='w-full h-full mt-[-80px]'>
-                  <img src={curve} alt="curve" />
-                  </div>
+    <div className='flex flex-col w-full h-full '>
 
           <div className='h-full w-full flex flex-col md:flex-row px-6 py-12 bg-[#1A2156] gap-10 md:gap-0'>
             <div className='flex flex-col w-full mx-auto md:mx-20 gap-3 justify-center'>
