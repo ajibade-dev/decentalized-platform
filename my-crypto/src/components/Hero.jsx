@@ -44,8 +44,8 @@ const Hero = () => {
             </div>
         </div>
 
-        <div className='w-full h-full -mt-16 md:mt-[10px]'>
-                  <img src={curve} alt="curve" className='md:-mt-[200px] w-[150%]'/>
+        <div className='w-full h-full -mt-14 md:mt-[10px]'>
+                  <img src={curve} alt="curve" className='md:-mt-[200px] md:w-[150%] w-full'/>
                   </div>
         </div>
   )

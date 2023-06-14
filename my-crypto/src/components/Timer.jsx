@@ -21,7 +21,7 @@ const Timer = ({ duration }) => {
         let hours = parseInt(total_hours % 24)
 
         return (
-            <div className='w-[400px] h-[170px] bg-gradient-to-b from-blue-900 to-blue-950 rounded-2xl flex flex-col gap-3 mt-24 justify-center items-center'>
+            <div className='md:w-[400px] w-[340px] h-[170px] bg-gradient-to-b from-blue-900 to-blue-950 rounded-2xl flex flex-col gap-3 mt-24 justify-center items-center'>
                 <div className='flex flex-row gap-3 mx-24'>
                      {/* div holding number and word */}
                 <div className='flex flex-col gap-2 items-center'>
