@@ -4,7 +4,7 @@ const Tokenomics = () => {
   return (
     <div className='flex w-full h-full flex-col gap-10 bg-[#1A2156] py-6 px-12 items-center justify-center'>
 
-            <h2 className='text-3xl font-display font-semibold text-white'>
+            <h2 className='text-3xl font-display font-semibold text-white mt-24 md:mt-0'>
             TOKENOMICS
             </h2>
 

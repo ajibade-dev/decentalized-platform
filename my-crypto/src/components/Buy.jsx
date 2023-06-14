@@ -9,7 +9,7 @@ import illustration from '../assets/illustration.png'
 
 const Buy = () => {
   return (
-    <div className='flex w-full h-full flex-col-reverse md:flex-row gap-5 px-8 py-12 bg-[#1A2156] items-center'>
+    <div className='flex w-full h-full flex-col-reverse md:flex-row gap-5 px-8 md:py-24 py-12 bg-[#1A2156] items-center'>
 
 {/*  to hold the sections i.e the containers for the cards */}
     <div className='flex flex-col gap-10 w-full md:w-2/3 px-2 md:px-12 mx-10'>
