@@ -9,7 +9,7 @@ const Hero = () => {
   return (
   
   <div className='bg-[#1A2156] w-full h-full relative'>
-          <div className="h-[650px] md:h-[1200px] pb-10 md:pb-20 pt-20" style={{
+          <div className="h-[650px] md:h-[1200px] pb-10  pt-20" style={{
         backgroundImage: `url(${third2})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',

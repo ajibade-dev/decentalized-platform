@@ -5,22 +5,22 @@ import logo from '../assets/logo.png'
 const Navbar = () => {
 
   const [nav, setNav] = useState(true);
-  const [scrolled, setScrolled] = useState(false);
+  //const [scrolled, setScrolled] = useState(false);
 
-  // to give a sticky menu
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 0;
-      setScrolled(isScrolled);
-    };
+  // // to give a sticky menu
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const isScrolled = window.scrollY > 0;
+  //     setScrolled(isScrolled);
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
-  const navbarClass = scrolled ? 'bg-[#1A2156]' : 'bg-transparent';
+  // const navbarClass = scrolled ? 'bg-[#1A2156]' : 'bg-transparent';
 
 //to open and close the menu in mobile
   const handleNav = () => {
@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
 
-<nav className={`"bg-transparent fixed w-full z-10 top-0 left-0 duration-300" ${navbarClass}`}>
+<nav className="bg-transparent duration-300 -mt-20" >
   
   <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
   <a href="" className="flex items-center">
