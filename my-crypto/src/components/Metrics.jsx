@@ -36,13 +36,13 @@ PRESALE
 
                     {/* div for the listing */}
                     <div className='flex flex-row gap-10 items-center justify-center'>
-                        <div className='flex flex-col gap-3 w-[259px]'>
-                            <p className='font-display text-gray-500 text-[22px]'>Supply</p>
-                            <p className='font-display text-gray-500 text-[22px]'>Presale Price</p>
-                            <p className='font-display text-gray-500 text-[22px]'>Listing Price</p>
+                        <div className='flex flex-col gap-3 md:w-[259px] w-2/3'>
+                            <p className='font-display text-gray-500 md:text-[22px]'>Supply</p>
+                            <p className='font-display text-gray-500 md:text-[22px]'>Presale Price</p>
+                            <p className='font-display text-gray-500 md:text-[22px]'>Listing Price</p>
                         </div>
 
-                        <div className='flex flex-col gap-3 justify-center'>
+                        <div className='flex flex-col gap-3 md:justify-center'>
                             <h4 className='font-display md:text-xl text-white'>
                                 1 Trillion $SPCSHIB
                             </h4>

@@ -74,8 +74,8 @@ const Navbar = () => {
   {/* </div> */}
 
   {/* Mobile Menu */}
-  <div className='flex md:hidden'>
-  <div className={!nav ? 'fixed left-0 top-0 w-[50%] h-[70%] bg-gray-800 ease-in-out duration-500' : 'fixed left-[-100%] ease-out duration-500'}>
+  <div className='flex md:hidden z-20'>
+  <div className={!nav ? 'fixed left-0 top-0 w-[50%] h-[50%] bg-gray-800 ease-in-out duration-500' : 'fixed left-[-100%] ease-out duration-500'}>
   {/* <a href="" className="flex items-center">
     <span className="self-center whitespace-nowrap dark:text-white font-display font-extrabold text-3xl pt-10">SPACE SHIBA</span>
   </a> */}
