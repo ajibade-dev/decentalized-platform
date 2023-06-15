@@ -6,31 +6,31 @@ const Clipboard = () => {
     const [value, setValue] = useState('');
     const [copied, setCopied] = useState(false)
   return (
-    <div className='flex flex-row gap-5 bg-[#36358F] md:w-2/3 w-[400px] h-[113px] py-4 rounded-2xl'>
+    <div className='flex flex-row gap-5 bg-[#36358F] md:w-2/3 w-[400px] h-[113px] py-4  rounded-2xl'>
         <center className='flex flex-row items-center justify-between px-10 md:w-full gap-12'>
-            <div className='flex flex-col'>
-                <h4 className='text-white font-display mr-4'>Token Contact Address</h4>
-            <input type="text" 
+            <div className='flex flex-col items-center'>
+                <h4 className='text-white font-display md:-ml-10 -ml-10'>Token Contact Address</h4>
+            <h4 
             value="0xf412af62269a0b3................."
             onChange={({ target: {value}}) => setValue(value)}
-            className='bg-[#36358F] rounded-md flex items-center justify-center text-white font-display'
+            className='bg-[#36358F] flex items-center justify-center text-white font-display'
 
- />
+ >0xf412af62269a0b3.................</h4>
             </div>
   
 <div class>
-<CopyToClipboard text={value}
+<CopyToClipboard text="0xf412af62269a0b3................."
 onCopy={() => setCopied(true)}
 >
-<button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 mt-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                <span class="relative md:px-6 md:py-4 px-4 py-2  transition-all ease-in duration-7 bg-[#36358F] rounded-md group-hover:bg-opacity-0 font-display">
+<button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 mt-2 overflow-hidden text-sm font-medium text-white rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-300">
+                <span class="relative md:px-6 md:py-4 px-2 py-2  transition-all ease-in duration-7 bg-[#36358F] rounded-md group-hover:bg-opacity-0 font-display ">
                     Copy to Clipboard
                 </span></button>
 </CopyToClipboard>
 </div>
 
 
-{copied ? <span>Copied</span> : null}
+{copied ? <span className='text-white font-display text-base m-0'>Copied</span> : null}
   </center>
 
     </div>

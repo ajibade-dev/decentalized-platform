@@ -8,7 +8,7 @@ import curve from '../assets/curve.png'
 const Hero = () => {
   return (
   
-  <div className='bg-[#1A2156] w-full h-full relative'>
+  <div className='bg-[#1A2156] w-full h-full' id='home'>
           <div className="h-[650px] md:h-[1200px] pb-10  pt-20" style={{
         backgroundImage: `url(${third2})`,
         backgroundSize: 'cover',
@@ -30,8 +30,8 @@ const Hero = () => {
 
                 <button type="button" className="text-white bg-gradient-to-r from-orange-200 to-purple-400 rounded-lg md:px-10 md:py-[20px] px-6 py-2  text-center mr-3 hover:bg-white hover:text-blue-950 hover:border-black duration-200 font-display md:text-[20px] text-base">How to Buy</button>
                 
-                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                <span class="relative md:px-12 md:py-[20px] px-6 py-2 transition-all ease-in duration-7 bg-slate-900 rounded-md group-hover:bg-opacity-0 font-display md:text-[20px] text-base">
+                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                <span class="relative md:px-12 md:py-[20px] px-6 py-2 transition-all ease-in duration-7 bg-slate-900 rounded-md group-hover:bg-opacity-0 font-display md:text-[20px] text-base text-white">
                     Whitepaper
                 </span></button>
                 </div>

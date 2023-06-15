@@ -5,9 +5,9 @@ import logo from '../assets/logo.png'
 const Navbar = () => {
 
   const [nav, setNav] = useState(true);
-  //const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  // // to give a sticky menu
+  // to give a sticky menu
   // useEffect(() => {
   //   const handleScroll = () => {
   //     const isScrolled = window.scrollY > 0;
@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
 
-<nav className="bg-transparent duration-300 -mt-20" >
+<nav className="bg-transparent duration-300 -mt-16" >
   
   <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
   <a href="" className="flex items-center">
@@ -42,19 +42,19 @@ const Navbar = () => {
   <div className="items-center justify-between mx-auto hidden w-full md:flex md:w-auto" id="navbar-cta">
     <ul className="flex flex-col font-medium p-4 md:p-0 mt-4  rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0">
       <li>
-        <a href="#" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0" aria-current="page">Home</a>
+        <a href="#home" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0" aria-current="page">Home</a>
       </li>
 
       <li>
-        <a href="#" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent  md:p-0 " aria-current="page">Buy</a>
+        <a href="#buy" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent  md:p-0 " aria-current="page">Buy</a>
       </li>
 
       <li>
-        <a href="#" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent  md:p-0" aria-current="page">Ecosystem</a>
+        <a href="#ecosystem" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent  md:p-0" aria-current="page">Ecosystem</a>
       </li>
 
       <li>
-        <a href="#" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 " aria-current="page">Community</a>
+        <a href="#community" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 " aria-current="page">Community</a>
       </li>
      
     </ul>
@@ -62,8 +62,8 @@ const Navbar = () => {
 
   </div> 
   {/* <div className="flex"> */}
-  <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 mt-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                <span class="relative md:px-10 md:py-4 px-6 py-2  transition-all ease-in duration-7 bg-slate-900 rounded-md group-hover:bg-opacity-0 font-display">
+  <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 mt-4 overflow-hidden text-sm font-medium text-white rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                <span class="relative md:px-10 md:py-4 px-6 py-2  transition-all ease-in duration-7 bg-slate-900 rounded-md group-hover:bg-opacity-0 font-display text-white">
                     Whitepaper
                 </span></button>
 
@@ -82,19 +82,19 @@ const Navbar = () => {
 
     <ul className='pt-16 uppercase pr-4'>
     <li>
-        <a href="#" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 text-xl hover:bg-slate-700 border-b border-gray-700" aria-current="page">Home</a>
+        <a href="#home" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 text-xl hover:bg-slate-700 border-b border-gray-700" aria-current="page">Home</a>
       </li>
 
       <li>
-        <a href="#" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 text-xl hover:bg-slate-700 border-b border-gray-700" aria-current="page">Buy</a>
+        <a href="#buy" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 text-xl hover:bg-slate-700 border-b border-gray-700" aria-current="page">Buy</a>
       </li>
 
       <li>
-        <a href="#" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 text-xl hover:bg-slate-700 border-b border-gray-700" aria-current="page">Ecosystem</a>
+        <a href="#ecosystem" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 text-xl hover:bg-slate-700 border-b border-gray-700" aria-current="page">Ecosystem</a>
       </li>
 
       <li>
-        <a href="#" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 text-xl hover:bg-slate-700" aria-current="page">Community</a>
+        <a href="#community" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 text-xl hover:bg-slate-700" aria-current="page">Community</a>
       </li>
       
     </ul>

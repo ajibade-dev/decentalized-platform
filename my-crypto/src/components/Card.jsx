@@ -6,7 +6,7 @@ import spacedog from '../assets/spacedog.png'
 
 const Card = () => {
   return (
-    <div className='w-full h-full flex flex-col md:flex-row gap-10 md:gap-8 bg-[#1A2156] px-6 py-12 flex-wrap items-center '>
+    <div className='w-full h-full flex flex-col md:flex-row gap-10 md:gap-8 bg-[#1A2156] px-6 py-12 flex-wrap items-center' id='community'>
 
       <div className='flex flex-col md:flex-row gap-10 mx-auto  md:flex-wrap lg:flex-nowrap items-center'>
 
