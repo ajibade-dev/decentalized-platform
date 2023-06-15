@@ -6,9 +6,9 @@ import spacedog from '../assets/spacedog.png'
 
 const Card = () => {
   return (
-    <div className='w-full h-full flex flex-col md:flex-row gap-10 md:gap-8 bg-[#1A2156] px-6 py-12 items-center '>
+    <div className='w-full h-full flex flex-col md:flex-row gap-10 md:gap-8 bg-[#1A2156] px-6 py-12 flex-wrap items-center '>
 
-      <div className='flex flex-col md:flex-row gap-10 mx-auto justify-center items-center'>
+      <div className='flex flex-col md:flex-row gap-10 mx-auto  md:flex-wrap lg:flex-nowrap items-center'>
 
           {/*Card 1  */}
           <div className=' md:h-[457px] h-full w-3/4 md:w-[408px] rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
@@ -27,6 +27,9 @@ const Card = () => {
                     </p>
                   </div>
             </div>
+
+
+          
              
 
                {/*Card 2  */}
