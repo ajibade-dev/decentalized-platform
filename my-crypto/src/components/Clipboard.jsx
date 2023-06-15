@@ -7,7 +7,7 @@ const Clipboard = () => {
     const [copied, setCopied] = useState(false)
   return (
     <div className='flex flex-row gap-5 bg-[#36358F] md:w-2/3 w-[400px] h-[113px] py-4 rounded-2xl'>
-        <center className='flex flex-row items-center justify-between px-10 md:w-full'>
+        <center className='flex flex-row items-center justify-between px-10 md:w-full gap-12'>
             <div className='flex flex-col'>
                 <h4 className='text-white font-display mr-4'>Token Contact Address</h4>
             <input type="text" 
