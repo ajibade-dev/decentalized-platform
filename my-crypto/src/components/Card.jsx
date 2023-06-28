@@ -3,6 +3,7 @@ import spaceship from '../assets/spaceship.png'
 import line from '../assets/line.png'
 import spacebunny from '../assets/spacebunny.png'
 import spacedog from '../assets/spacedog.png'
+import { motion } from "framer-motion"
 
 const Card = () => {
   return (
@@ -11,7 +12,16 @@ const Card = () => {
       <div className='flex flex-col md:flex-row gap-10 mx-auto  md:flex-wrap lg:flex-nowrap items-center'>
 
           {/*Card 1  */}
-          <div className=' md:h-[457px] h-full w-3/4 md:w-[408px] rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.6 }}
+            variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: {opacity: 1, y: 0 }
+            }}
+          className='md:h-[457px] h-full w-3/4 md:w-[408px] rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
                 {/* spaceship */}
             <div className='w-60 h-25 flex items-center justify-center'>
                   <img src={spaceship} alt="spaceship" />
@@ -26,14 +36,23 @@ const Card = () => {
                     $SPACESHIBA will focus on getting listed on various centralized and decentralized exchanges. This will increase accessibility and liquidity for
                     </p>
                   </div>
-            </div>
+            </motion.div>
 
 
           
              
 
                {/*Card 2  */}
-               <div className=' md:h-[457px] h-full w-3/4 md:w-[408px] rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
+               <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay:0.3, duration: 0.6 }}
+                variants={{
+                    hidden: { opacity: 0, y: 50 },
+                    visible: {opacity: 1, y: 0 }
+                }}
+               className=' md:h-[457px] h-full w-3/4 md:w-[408px] rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
                 {/* spaceship */}
             <div className='w-60 h-25 flex items-center justify-center'>
                   <img src={spacebunny} alt="spaceship" />
@@ -48,10 +67,19 @@ const Card = () => {
                         The project will actively engage with the community through social media platforms such as Twitter and Telegram. These platforms will serve as channels for
                     </p>
                   </div>
-            </div>
+            </motion.div>
 
                {/*Card 3  */}
-               <div className='h-full md:h-[457px] w-3/4 md:w-[408px] rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
+               <motion.div 
+               initial="hidden"
+               whileInView="visible"
+               viewport={{ once: true, amount: 0.5 }}
+               transition={{ delay:0.6, duration: 0.6 }}
+               variants={{
+                   hidden: { opacity: 0, y: 50 },
+                   visible: {opacity: 1, y: 0 }
+               }}
+               className='h-full md:h-[457px] w-3/4 md:w-[408px] rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
                 {/* spaceship */}
             <div className='w-60 h-25 flex items-center justify-center'>
                   <img src={spacedog} alt="spaceship" />
@@ -66,7 +94,7 @@ const Card = () => {
                         We attach great importance to the security of the users and investors. Contract will be verified and renounced before launch. Team will do everything to make sure your money is safe.
                     </p>
                   </div>
-            </div>
+            </motion.div>
         
       </div>
      

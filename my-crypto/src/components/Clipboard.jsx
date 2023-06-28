@@ -1,12 +1,22 @@
 import React, {useState} from 'react'
 import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { motion } from 'framer-motion';
 
 const Clipboard = () => {
 
     const [value, setValue] = useState('');
     const [copied, setCopied] = useState(false)
   return (
-    <div className='flex flex-row gap-5 bg-[#36358F] md:w-2/3 w-[400px] h-[113px] py-4  rounded-2xl'>
+    <motion.div 
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, amount: 0.5 }}
+    transition={{ delay: 0.2, duration: 0.5 }}
+    variants={{
+        hidden: { opacity: 0, x: -50 },
+        visible: {opacity: 1, x: 0 }
+    }}
+    className='flex flex-row gap-5 bg-[#36358F] md:w-2/3 w-[400px] h-[113px] py-4  rounded-2xl'>
         <center className='flex flex-row items-center justify-between px-10 md:w-full gap-12'>
             <div className='flex flex-col items-center'>
                 <h4 className='text-white font-display md:-ml-10 -ml-10'>Token Contact Address</h4>
@@ -33,7 +43,7 @@ onCopy={() => setCopied(true)}
 {copied ? <span className='text-white font-display text-base m-0'>Copied</span> : null}
   </center>
 
-    </div>
+    </motion.div>
   )
 }
 

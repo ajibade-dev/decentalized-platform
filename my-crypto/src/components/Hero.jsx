@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import third2 from '../assets/third2.png'
 import shiba from '../assets/shiba.png'
 import curve from '../assets/curve.png'
+import { motion } from "framer-motion"
 
 
 const Hero = () => {
@@ -17,16 +18,43 @@ const Hero = () => {
             <Navbar />
             <div className='flex flex-col mx-auto justify-center items-center md:mt-24 mt-12 w-full md:gap-7 gap-3 md:p-0 px-2'>
                 <div className='w-[100%] md:mx-0 md:w-[875px] flex items-center justify-center'>
-                <div className='text-white text-2xl md:text-4xl font-display font-bold text-center'><h1 className='font-bold md:text-[45px] text-3xl'>
+                <motion.div 
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ duration: 0.7 }}
+                  variants={{
+                      hidden: { opacity: 0, x: -50 },
+                      visible: {opacity: 1, x: 0 }
+                  }}
+                className='text-white text-2xl md:text-4xl font-display font-bold text-center'><h1 className='font-bold md:text-[45px] text-3xl'>
                 A Decentralized Meme Token that evolved into a galactic ecosystem</h1>
-                </div>
+                </motion.div>
                 </div>
 
                <div className='w-[100%] md:mx-0 md:w-[1083px]'>
-               <div className='text-slate-200 font-display md:text-base text-center'> <p className='md:text-[20px] md:leading-8 md:font-medium font-thin text-sm leading-2'>Welcome to $SPCSHIB, the ultimate meme token for the crypto community! $SPCSHIB is a fun and exciting way to participate in the world of cryptocurrency while also showing off your love for memes. With $SPCSHIB, you can enjoy all the benefits of a decentralized currency while also sharing laughs and good vibes with other investors</p>  </div>
+               <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.2, duration: 0.6 }}
+                variants={{
+                    hidden: { opacity: 0, x: -50 },
+                    visible: {opacity: 1, x: 0 }
+                }}
+               className='text-slate-200 font-display md:text-base text-center'> <p className='md:text-[20px] md:leading-8 md:font-medium font-thin text-sm leading-2'>Welcome to $SPCSHIB, the ultimate meme token for the crypto community! $SPCSHIB is a fun and exciting way to participate in the world of cryptocurrency while also showing off your love for memes. With $SPCSHIB, you can enjoy all the benefits of a decentralized currency while also sharing laughs and good vibes with other investors</p>  </motion.div>
                 </div> 
 
-                <div className='flex-col md:flex-row justify-center items-center'>
+                <motion.div 
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ delay: 0.4, duration: 1.0 }}
+                  variants={{
+                      hidden: { opacity: 0, y: 50 },
+                      visible: {opacity: 1, y: 0 }
+                  }}
+                className='flex-col md:flex-row justify-center items-center'>
 
                 <button type="button" className="text-white bg-gradient-to-r from-orange-200 to-purple-400 rounded-lg md:px-10 md:py-[20px] px-6 py-2  text-center mr-3 hover:bg-white hover:text-blue-950 hover:border-black duration-200 font-display md:text-[20px] text-base">How to Buy</button>
                 
@@ -34,13 +62,22 @@ const Hero = () => {
                 <span class="relative md:px-12 md:py-[20px] px-6 py-2 transition-all ease-in duration-7 bg-slate-900 rounded-md group-hover:bg-opacity-0 font-display md:text-[20px] text-base text-white">
                     Whitepaper
                 </span></button>
-                </div>
+                </motion.div>
 
                 {/* Image of the dog */}
                 <div className='mx-auto flex justify-center items-center md:mt-10 mt-0 z-10'>
-                  <div className='md:w-[25%] h-60 w-40 mt-[-16px] md:mt-0'>
+                  <motion.div 
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ delay: 0.2, duration: 0.5 }}
+                    variants={{
+                        hidden: { opacity: 0, x: -50 },
+                        visible: {opacity: 1, x: 0 }
+                    }}
+                  className='md:w-[25%] h-60 w-40 mt-[-16px] md:mt-0'>
                   <img src={shiba} alt="shiba" />
-                  </div>
+                  </motion.div>
                 
                 </div>
             </div>

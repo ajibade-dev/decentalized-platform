@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { motion } from 'framer-motion';
 
 const Timer = ({ duration }) => {
     const [time, setTime] = useState(duration);
@@ -21,7 +22,16 @@ const Timer = ({ duration }) => {
         let hours = parseInt(total_hours % 24)
 
         return (
-            <div className='md:w-[759px] w-[340px] h-[160px] md:h-[261px] bg-gradient-to-b from-blue-900 to-blue-950 md:rounded-3xl rounded-xl flex flex-col gap-3 md:pt-[40px] pt-[20px] mt-[300px] md:mt-0 items-center justify-center'>
+            <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: {opacity: 1, y: 0 }
+            }}
+            className='md:w-[759px] w-[340px] h-[160px] md:h-[261px] bg-gradient-to-b from-blue-900 to-blue-950 md:rounded-3xl rounded-xl flex flex-col gap-3 md:pt-[40px] pt-[20px] mt-[300px] md:mt-0 items-center justify-center'>
                 <div className='flex flex-row gap-3 mx-24'>
                      {/* div holding number and word */}
                 <div className='flex flex-col gap-2 items-center'>
@@ -82,7 +92,7 @@ const Timer = ({ duration }) => {
                 
                
             
-            </div>
+            </motion.div>
             
         )
     }

@@ -5,6 +5,9 @@ import together from '../assets/together.png'
 import eth from '../assets/eth.png'
 import metamask from '../assets/metamask.png'
 import illustration from '../assets/illustration.png'
+import { motion } from "framer-motion"
+
+
 
 
 const Buy = () => {
@@ -15,7 +18,16 @@ const Buy = () => {
     <div className='flex flex-col gap-10 w-full md:w-2/3 px-2 md:px-12 mx-10'>
 
         {/* div holding the shiba and text */}
-        <div className='flex flex-row gap-3 w-full md:w-[500px]'>
+        <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: {opacity: 1, x: 0 }
+            }}
+        className='flex flex-row gap-3 w-full md:w-[500px]'>
             {/* for the shiba image */}
         <div className='md:h-[137px] md:w-[129px] w-[80px] h-[50px] flex items-center justify-center'>
            <img src={shiba} alt="shiba" />
@@ -27,10 +39,19 @@ const Buy = () => {
                 <h2 className='font-display text-xl md:text-[50px] font-semibold text-white'>How To Buy</h2>
             </div>
 
-        </div>
+        </motion.div>
             {/* div for the cards */}
             {/* card 1 */}
-        <div className='w-full h-full bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
+        <motion.div 
+           initial="hidden"
+           whileInView="visible"
+           viewport={{ once: true, amount: 0.5 }}
+           transition={{ delay:0.2, duration: 0.5 }}
+           variants={{
+               hidden: { opacity: 0, x: -50 },
+               visible: {opacity: 1, x: 0 }
+           }}
+        className='w-full h-full bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
 
             {/* for the upper part of the div */}
             <div className='flex flex-row items-center gap-3 md:w-[381px]'>
@@ -47,10 +68,19 @@ const Buy = () => {
                     Create a metamask wallet using either a desktop computer or an IOS/Android Mobile device. That will allow you to buy, sell, and receive $SPCSHIB in presale and after the launch.
                 </p>
             </div>
-        </div>
+        </motion.div>
 
             {/* card 2 */}
-            <div className='w-full h-full bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
+            <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay:0.4, duration: 0.5 }}
+                variants={{
+                    hidden: { opacity: 0, x: -50 },
+                    visible: {opacity: 1, x: 0 }
+                }}
+            className='w-full h-full bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
 
         {/* for the upper part of the div */}
         <div className='flex flex-row items-center gap-3 md:w-[381px]'>
@@ -67,10 +97,19 @@ const Buy = () => {
                You can buy $ETH directly on Metamask or transfer it to your Metamask Wallet from exchanges like Coinbase, Binance, etc. Make sure to use  the ERC-20 network when transfering ETH
             </p>
 </div>
-</div>
+</motion.div>
 
             {/* card 3 */}
-        <div className='w-full h-full bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
+        <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay:0.6, duration: 0.5 }}
+            variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: {opacity: 1, x: 0 }
+            }}
+        className='w-full h-full bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
 
                 {/* for the upper part of the div */}
                 <div className='flex flex-row items-center gap-3 md:w-[381px]'>
@@ -87,12 +126,21 @@ const Buy = () => {
                         Access your wallet to Pinksale and after launch to Uniswap by clicking "Connect to Wallet" and selecting MetaMask.
                     </p>
                 </div>
-                </div>
+                </motion.div>
 
 
                     {/* div for the cards */}
             {/* card 4 */}
-        <div className='w-full h-full bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
+        <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay:0.8, duration: 0.5 }}
+            variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: {opacity: 1, x: 0 }
+            }}
+        className='w-full h-full bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
 
                 {/* for the upper part of the div */}
                 <div className='flex flex-row items-center gap-3'>
@@ -109,18 +157,27 @@ const Buy = () => {
                        You can start swapping as soon as you have $ETH available. Press "Select a token" and enter the token address or search directly through the links from twitter or telegram.
                     </p>
 </div>
-</div>
+</motion.div>
     </div>
 
     {/* for the big image on the side */}
 
-    <div className='w-full h-full mx-auto flex justify-center items-center'>
+    <motion.div 
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ delay:0.4, duration: 0.5 }}
+        variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: {opacity: 1, x: 0 }
+        }}
+    className='w-full h-full mx-auto flex justify-center items-center'>
 
 
-<div className=' w-full h-full flex items-center justify-center mx-auto'>
+<div className=' w-full h-full flex items-center justify-center'>
            <img src={illustration} alt="shiba" />
          </div>
-    </div>
+    </motion.div>
 
     
     </div>
