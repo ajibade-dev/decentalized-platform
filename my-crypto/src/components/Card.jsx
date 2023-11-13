@@ -21,7 +21,7 @@ const Card = () => {
                 hidden: { opacity: 0, y: 50 },
                 visible: {opacity: 1, y: 0 }
             }}
-          className='md:h-[457px] h-full w-3/4 md:w-[408px] rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
+          className='md:h-[457px] h-full max-w-[308px] md:max-w-[408px] rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
                 {/* spaceship */}
             <div className='w-60 h-25 flex items-center justify-center'>
                   <img src={spaceship} alt="spaceship" />
@@ -52,7 +52,7 @@ const Card = () => {
                     hidden: { opacity: 0, y: 50 },
                     visible: {opacity: 1, y: 0 }
                 }}
-               className=' md:h-[457px] h-full w-3/4 md:w-[408px] rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
+               className=' md:h-[457px] h-full max-w-[308px] md:max-w-[408px] rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
                 {/* spaceship */}
             <div className='w-60 h-25 flex items-center justify-center'>
                   <img src={spacebunny} alt="spaceship" />
@@ -79,7 +79,7 @@ const Card = () => {
                    hidden: { opacity: 0, y: 50 },
                    visible: {opacity: 1, y: 0 }
                }}
-               className='h-full md:h-[457px] w-3/4 md:w-[408px] rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
+               className='h-full md:h-[457px] max-w-[308px] md:max-w-[408px] rounded-lg bg-gradient-to-b from-blue-900 to-blue-950 flex flex-col items-center mt-20'>
                 {/* spaceship */}
             <div className='w-60 h-25 flex items-center justify-center'>
                   <img src={spacedog} alt="spaceship" />

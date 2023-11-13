@@ -16,7 +16,7 @@ const Clipboard = () => {
         hidden: { opacity: 0, x: -50 },
         visible: {opacity: 1, x: 0 }
     }}
-    className='flex flex-row gap-5 bg-[#36358F] md:w-2/3 w-[400px] h-[113px] py-4  rounded-2xl'>
+    className='flex flex-row gap-5 bg-[#36358F] md:w-[700px] w-[400px] h-[113px] py-4 rounded-2xl'>
         <center className='flex flex-row items-center justify-between px-10 md:w-full gap-12'>
             <div className='flex flex-col items-center'>
                 <h4 className='text-white font-display md:-ml-10 -ml-10'>Token Contact Address</h4>
@@ -33,7 +33,7 @@ const Clipboard = () => {
 onCopy={() => setCopied(true)}
 >
 <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 mt-2 overflow-hidden text-sm font-medium text-white rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-300">
-                <span class="relative md:px-6 md:py-4 px-2 py-2  transition-all ease-in duration-7 bg-[#36358F] rounded-md group-hover:bg-opacity-0 font-display ">
+                <span class="relative md:px-6 md:py-4 px-2 py-2 transition-all ease-in duration-7 bg-[#36358F] rounded-md group-hover:bg-opacity-0 font-display ">
                     Copy to Clipboard
                 </span></button>
 </CopyToClipboard>

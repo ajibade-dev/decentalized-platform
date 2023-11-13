@@ -31,7 +31,7 @@ const Hero = () => {
                 A Decentralized Meme Token that evolved into a galactic ecosystem</h1>
                 </motion.div>
                 </div>
-
+                  {/* the write up underneath */}
                <div className='w-[100%] md:mx-0 md:w-[1083px]'>
                <motion.div 
                 initial="hidden"
@@ -44,7 +44,7 @@ const Hero = () => {
                 }}
                className='text-slate-200 font-display md:text-base text-center'> <p className='md:text-[20px] md:leading-8 md:font-medium font-thin text-sm leading-2'>Welcome to $SPCSHIB, the ultimate meme token for the crypto community! $SPCSHIB is a fun and exciting way to participate in the world of cryptocurrency while also showing off your love for memes. With $SPCSHIB, you can enjoy all the benefits of a decentralized currency while also sharing laughs and good vibes with other investors</p>  </motion.div>
                 </div> 
-
+                {/* the buttons */}
                 <motion.div 
                   initial="hidden"
                   whileInView="visible"
@@ -65,7 +65,7 @@ const Hero = () => {
                 </motion.div>
 
                 {/* Image of the dog */}
-                <div className='mx-auto flex justify-center items-center md:mt-10 mt-0 z-10'>
+                <div className='mx-auto flex justify-center items-center md:mt-10 mt-0 z-10 max-w-[80%]'>
                   <motion.div 
                     initial="hidden"
                     whileInView="visible"

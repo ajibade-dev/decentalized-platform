@@ -15,7 +15,7 @@ const Buy = () => {
     <div className='flex w-full h-full flex-col-reverse md:flex-row gap-5 px-8 md:py-24 py-12 bg-[#1A2156] items-center' id='buy'>
 
 {/*  to hold the sections i.e the containers for the cards */}
-    <div className='flex flex-col gap-10 w-full md:w-2/3 px-2 md:px-12 mx-10'>
+    <div className='flex flex-col gap-10 w-full md:w-1/2 px-2 md:px-12'>
 
         {/* div holding the shiba and text */}
         <motion.div 
@@ -51,7 +51,7 @@ const Buy = () => {
                hidden: { opacity: 0, x: -50 },
                visible: {opacity: 1, x: 0 }
            }}
-        className='w-full h-full bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
+        className='w-full h-full md:max-w-[1000px] bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
 
             {/* for the upper part of the div */}
             <div className='flex flex-row items-center gap-3 md:w-[381px]'>
@@ -80,7 +80,7 @@ const Buy = () => {
                     hidden: { opacity: 0, x: -50 },
                     visible: {opacity: 1, x: 0 }
                 }}
-            className='w-full h-full bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
+            className='w-full h-full md:max-w-[1000px] bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
 
         {/* for the upper part of the div */}
         <div className='flex flex-row items-center gap-3 md:w-[381px]'>
@@ -109,7 +109,7 @@ const Buy = () => {
                 hidden: { opacity: 0, x: -50 },
                 visible: {opacity: 1, x: 0 }
             }}
-        className='w-full h-full bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
+        className='w-full h-full md:max-w-[1000px] bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
 
                 {/* for the upper part of the div */}
                 <div className='flex flex-row items-center gap-3 md:w-[381px]'>
@@ -140,7 +140,7 @@ const Buy = () => {
                 hidden: { opacity: 0, x: -50 },
                 visible: {opacity: 1, x: 0 }
             }}
-        className='w-full h-full bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
+        className='w-full h-full md:max-w-[1000px] bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
 
                 {/* for the upper part of the div */}
                 <div className='flex flex-row items-center gap-3'>
@@ -171,7 +171,7 @@ const Buy = () => {
             hidden: { opacity: 0, x: 50 },
             visible: {opacity: 1, x: 0 }
         }}
-    className='w-full h-full mx-auto flex justify-center items-center'>
+    className='w-full h-full md:w-1/2 mx-auto flex justify-center items-center'>
 
 
 <div className=' w-full h-full flex items-center justify-center'>

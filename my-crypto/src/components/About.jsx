@@ -7,10 +7,10 @@ import { motion } from "framer-motion"
 
 const About = () => {
   return (
-    <div className='flex flex-col w-full h-full '>
-
-          <div className='h-full w-full flex flex-col md:flex-row px-6 py-12 bg-[#1A2156] gap-10 md:gap-0'>
-            <div className='flex flex-col w-full mx-auto md:mx-20 gap-3 justify-center'>
+    <div className='flex flex-col w-full h-full bg-[#1A2156] items-center'>
+          <div className='h-full max-w-[2000px] flex flex-col md:flex-row px-6 py-12 bg-[#1A2156] gap-10 md:gap-0 items-center'>
+            {/* div for the first half */}
+            <div className='flex flex-col w-full md:w-1/2 mx-auto max-w-[1000px] gap-3 justify-center items-center md:items-start'>
                 {/* div holdiing shiba and text on the side */}
                 <motion.div 
                   initial="hidden"
@@ -31,7 +31,7 @@ const About = () => {
                   {/* text div */}
                   <div className='flex flex-col w-full justify-center'
                   >
-                    <h1 className='font-extrabold font-display md:text-[50px] text-3xl text-[#393E65]'>Revolutionary</h1>
+                    <h1 className='font-extrabold font-display md:text-[50px] text-2xl text-[#393E65]'>Revolutionary</h1>
 
                     <div className='flex flex-row mt-5'>
                         <h2 className='font-display font-bold text-sm md:text-[40px] text-white'>Space shiba <span className='text-[#218CEC]'>Ecosystem</span></h2>
@@ -52,7 +52,7 @@ const About = () => {
                       hidden: { opacity: 0, y: 50 },
                       visible: {opacity: 1, y: 0 }
                   }}
-                className='w-[400px] md:w-[600px] '>
+                className='max-w-[400px] md:max-w-[80%]'>
                     <p className='text-slate-400 font-medium text-sm md:text-[25px] leading-9'>
                         $SPACESHIBA is a meme coin that strives to merge humor, community and blockchain technology to create a novel experience for cryptocurrency enthusiasts. By building on the Ethereum blockchain, $SPACESHIBA benefits from
                     </p>
@@ -70,7 +70,7 @@ const About = () => {
                   hidden: { opacity: 0, x: 50 },
                   visible: {opacity: 1, x: 0 }
               }}
-            className='w-[80%] h-[80%] flex items-center justify-center mx-auto md:mr-20'>
+            className='w-[60%] md:w-1/2 h-[80%] flex justify-center'>
                   <img src={side} alt="shiba" />
                   </motion.div>
             </div>        
