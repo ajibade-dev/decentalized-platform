@@ -54,7 +54,7 @@ const Buy = () => {
         className='w-full h-full md:max-w-[1000px] bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
 
             {/* for the upper part of the div */}
-            <div className='flex flex-row items-center gap-3 md:w-[381px]'>
+            <div className='flex flex-row items-center gap-3 w-full'>
                 <h1 className='font-display text-2xl font-semibold text-white md:text-[30px]'>01</h1>
                 <div className=' w-[60px] h-[50px] flex items-center justify-center'>
            <img src={metamask} alt="shiba" />
@@ -83,7 +83,7 @@ const Buy = () => {
             className='w-full h-full md:max-w-[1000px] bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
 
         {/* for the upper part of the div */}
-        <div className='flex flex-row items-center gap-3 md:w-[381px]'>
+        <div className='flex flex-row items-center gap-3 w-full'>
             <h1 className='font-display text-2xl font-semibold text-white md:text-[26px]'>02</h1>
             <div className=' w-[30px] h-[25px] flex items-center justify-center'>
         <img src={eth} alt="shiba" />
@@ -112,7 +112,7 @@ const Buy = () => {
         className='w-full h-full md:max-w-[1000px] bg-gradient-to-b from-blue-900 to-blue-900 flex flex-col px-4 py-8 rounded-lg gap-3'>
 
                 {/* for the upper part of the div */}
-                <div className='flex flex-row items-center gap-3 md:w-[381px]'>
+                <div className='flex flex-row items-center gap-3'>
                     <h1 className='font-display text-2xl font-semibold text-white md:text-[25px]'>03</h1>
                     <div className=' w-[60px] h-[50px] flex items-center justify-center'>
                 <img src={together} alt="shiba" />

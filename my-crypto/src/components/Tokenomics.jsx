@@ -30,7 +30,7 @@ className='absolute md:text-[60px] text-base font-display font-semibold text-whi
     </motion.h2>
 
 </motion.h2>
-
+            {/* for the tokenomics image */}
             <motion.div 
               initial="hidden"
               whileInView="visible"
@@ -40,7 +40,7 @@ className='absolute md:text-[60px] text-base font-display font-semibold text-whi
                   hidden: { opacity: 0, y: 50 },
                   visible: {opacity: 1, y: 0 }
               }}
-            className=' w-[400px] md:w-2/3 h-full flex items-center justify-center'>
+            className='w-full md:w-2/3 h-full flex items-center justify-center'>
            <img src={token} alt="spaceship"/>
                </motion.div>
 
