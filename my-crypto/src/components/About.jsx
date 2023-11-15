@@ -34,7 +34,7 @@ const About = () => {
                     <h1 className='font-extrabold font-display md:text-[50px] text-2xl text-[#393E65]'>Revolutionary</h1>
 
                     <div className='flex flex-row mt-5'>
-                        <h2 className='font-display font-bold text-sm md:text-[40px] text-white'>Space shiba <span className='text-[#218CEC]'>Ecosystem</span></h2>
+                        <h2 className='font-display font-bold text-sm md:text-[40px] leading-10 text-white'>Space shiba <span className='text-[#218CEC]'>Ecosystem</span></h2>
                        
 
                     </div>

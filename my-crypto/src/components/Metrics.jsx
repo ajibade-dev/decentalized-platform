@@ -40,10 +40,10 @@ const Metrics = () => {
             </motion.h2>
 
 </motion.h2>
-
+            {/* for the clipboard built */}
         <Clipboard />
         {/* the div holding the inner containers */}
-        <div className='flex flex-col md:flex-row px-12 py-12 w-full  md:w-[1023px] bg-gradient-to-b from-blue-900 to-blue-950 gap-12 md:gap-32 items-center justify-around md:items-start rounded-xl'>
+        <div className='flex flex-col md:flex-row px-12 py-12 w-full md:max-w-[1000px] bg-gradient-to-b from-blue-900 to-blue-950 gap-12 md:gap-32 items-center justify-around md:items-start rounded-xl'>
             {/* div for the side image */}
             <motion.div 
                 initial="hidden"
@@ -54,7 +54,7 @@ const Metrics = () => {
                     hidden: { opacity: 0, x: -50 },
                     visible: {opacity: 1, x: 0 }
                 }}
-            className='md:w-60 md:h-25 w-40 h-25 flex'>
+            className='md:w-1/2 md:h-25 w-full justify-center h-25 flex'>
                   <img src={rotate} alt="rotate" />
                   </motion.div>
 
@@ -69,7 +69,7 @@ const Metrics = () => {
                         hidden: { opacity: 0, x: 50 },
                         visible: {opacity: 1, x: 0 }
                     }}
-                  className='flex flex-col gap-5'>
+                  className='flex flex-col gap-5 md:w-1/2 w-full'>
                     <h2 className='font-display font-semibold md:text-[40px] text-white text-2xl'>Space Shiba<span className='text-blue-500'> Metrics</span></h2>
 
                     {/* div for the listing */}
